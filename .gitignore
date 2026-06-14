@@ -1,0 +1,17 @@
+data/raw/*.data
+data/processed/*.parquet
+models/*.joblib
+models/*.json
+.venv/
+.venu/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# Local practice copy + personal job-search files (not for public repos)
+practice_build/
+
+# Resume / cover letter artifacts
+**/Barrington_Miller_*
+**/.firecrawl/
