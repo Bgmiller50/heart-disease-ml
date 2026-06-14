@@ -21,7 +21,7 @@ from sklearn.metrics import (
 )
 from sklearn.model_selection import train_test_split
 
-from src.config import FIGURES_DIR, MODELS_DIR, RANDOM_STATE, TEST_SIZE
+from src.config import FIGURES_DIR, MODELS_DIR, RANDOM_STATE, TEST_SIZE, rel_path
 from src.load_data import load_processed
 from src.train import FEATURE_COLS
 
@@ -124,9 +124,9 @@ def evaluate(model_path: Path | None = None) -> dict:
     report = {
         "metrics": metrics,
         "figures": {
-            "roc": str(roc_path),
-            "confusion_matrix": str(cm_path),
-            "calibration": str(cal_path),
+            "roc": rel_path(roc_path),
+            "confusion_matrix": rel_path(cm_path),
+            "calibration": rel_path(cal_path),
         },
     }
     out = MODELS_DIR / "evaluation_report.json"

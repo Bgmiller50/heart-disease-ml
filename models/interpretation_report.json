@@ -238,7 +238,7 @@
     "Age (years) (age) \u2014 rank 5"
   ],
   "figures": {
-    "feature_importance": "/Users/barringtonmiller/Data Science Learning/projects/01_heart_disease/reports/figures/feature_importance.png",
-    "threshold_sensitivity": "/Users/barringtonmiller/Data Science Learning/projects/01_heart_disease/reports/figures/threshold_sensitivity.png"
+    "feature_importance": "reports/figures/feature_importance.png",
+    "threshold_sensitivity": "reports/figures/threshold_sensitivity.png"
   }
 }

@@ -7,10 +7,9 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .DS_Store
+.pytest_cache/
 
-# Local practice copy + personal job-search files (not for public repos)
+# Local-only files
 practice_build/
-
-# Resume / cover letter artifacts
 **/Barrington_Miller_*
 **/.firecrawl/

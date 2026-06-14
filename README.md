@@ -8,7 +8,7 @@
 
 **Author:** [Barrington Miller](https://github.com/Bgmiller50) — M.S. Data Science · B.S. Pharmacy
 
-⚠️ **Disclaimer:** Education and portfolio use only. Not validated for clinical decision-making.
+⚠️ **Disclaimer:** Not validated for clinical decision-making.
 
 ---
 
@@ -23,7 +23,7 @@
 | 5. Interpretation | `src/interpret.py` | Feature importance + threshold sensitivity |
 | 6. Orchestration | `src/run_pipeline.py` | Full pipeline in one command |
 | 7. Narrative | `notebooks/01_end_to_end_analysis.ipynb` | Stakeholder walkthrough |
-| 8. Report | `reports/PROJECT_REPORT.md` | Executive summary for recruiters |
+| 8. Report | `reports/PROJECT_REPORT.md` | Written analysis and recommendations |
 
 ---
 

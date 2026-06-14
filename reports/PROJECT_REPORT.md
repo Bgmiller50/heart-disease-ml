@@ -12,7 +12,7 @@ This project builds an end-to-end machine learning workflow to predict coronary 
 
 **Key result:** Random Forest achieved **ROC-AUC 0.958** on the held-out test set with **89.3% sensitivity** and **97.0% specificity** at the Youden-optimal threshold.
 
-> ⚠️ Educational/portfolio use only. Not validated for clinical decision-making.
+> ⚠️ Not validated for clinical decision-making.
 
 ---
 

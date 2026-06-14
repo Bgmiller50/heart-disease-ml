@@ -34,4 +34,4 @@ UCI encodes missing values as `?`. The pipeline imputes numeric features with th
 - 303 patients from Cleveland Clinic (1980s)
 - Predominantly male
 - Not representative of modern, diverse populations
-- For portfolio and education only — not for clinical deployment
+- Not for clinical deployment without external validation

@@ -51,3 +51,8 @@ FEATURE_LABELS = {
     "ca": "Major vessels (fluoroscopy)",
     "thal": "Thalassemia",
 }
+
+
+def rel_path(path: Path) -> str:
+    """Return a repo-relative path string for reports and metadata."""
+    return str(path.relative_to(PROJECT_ROOT))

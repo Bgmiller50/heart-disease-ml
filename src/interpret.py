@@ -12,7 +12,7 @@ import pandas as pd
 import seaborn as sns
 from sklearn.model_selection import train_test_split
 
-from src.config import FEATURE_LABELS, FIGURES_DIR, MODELS_DIR, RANDOM_STATE, TEST_SIZE
+from src.config import FEATURE_LABELS, FIGURES_DIR, MODELS_DIR, RANDOM_STATE, TEST_SIZE, rel_path
 from src.evaluate import clinical_metrics_at_threshold
 from src.load_data import load_processed
 from src.train import FEATURE_COLS
@@ -133,8 +133,8 @@ def run_interpretation(model_path: Path | None = None, out_dir: Path | None = No
     sensitivity_df = threshold_sensitivity(y_test, y_prob)
 
     figures = {
-        "feature_importance": str(plot_feature_importance(model, out_dir)),
-        "threshold_sensitivity": str(plot_threshold_sensitivity(sensitivity_df, out_dir)),
+        "feature_importance": rel_path(plot_feature_importance(model, out_dir)),
+        "threshold_sensitivity": rel_path(plot_threshold_sensitivity(sensitivity_df, out_dir)),
     }
 
     report = {

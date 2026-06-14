@@ -12,8 +12,8 @@
     "roc_auc": 0.9583333333333334
   },
   "figures": {
-    "roc": "/Users/barringtonmiller/Data Science Learning/projects/01_heart_disease/reports/figures/roc_curve.png",
-    "confusion_matrix": "/Users/barringtonmiller/Data Science Learning/projects/01_heart_disease/reports/figures/confusion_matrix.png",
-    "calibration": "/Users/barringtonmiller/Data Science Learning/projects/01_heart_disease/reports/figures/calibration_curve.png"
+    "roc": "reports/figures/roc_curve.png",
+    "confusion_matrix": "reports/figures/confusion_matrix.png",
+    "calibration": "reports/figures/calibration_curve.png"
   }
 }

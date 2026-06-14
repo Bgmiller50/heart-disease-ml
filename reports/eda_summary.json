@@ -152,10 +152,10 @@
     }
   },
   "figures": {
-    "class_balance": "/Users/barringtonmiller/Data Science Learning/projects/01_heart_disease/reports/figures/class_balance.png",
-    "clinical_features": "/Users/barringtonmiller/Data Science Learning/projects/01_heart_disease/reports/figures/clinical_features_by_outcome.png",
-    "correlation_heatmap": "/Users/barringtonmiller/Data Science Learning/projects/01_heart_disease/reports/figures/correlation_heatmap.png",
-    "age_chol_scatter": "/Users/barringtonmiller/Data Science Learning/projects/01_heart_disease/reports/figures/age_chol_scatter.png",
-    "missing_values": "/Users/barringtonmiller/Data Science Learning/projects/01_heart_disease/reports/figures/missing_values.png"
+    "class_balance": "reports/figures/class_balance.png",
+    "clinical_features": "reports/figures/clinical_features_by_outcome.png",
+    "correlation_heatmap": "reports/figures/correlation_heatmap.png",
+    "age_chol_scatter": "reports/figures/age_chol_scatter.png",
+    "missing_values": "reports/figures/missing_values.png"
   }
 }

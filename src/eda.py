@@ -1,4 +1,4 @@
-"""Exploratory data analysis — summary stats and portfolio figures."""
+"""Exploratory data analysis — summary stats and figures."""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-from src.config import FEATURE_LABELS, FIGURES_DIR
+from src.config import FEATURE_LABELS, FIGURES_DIR, rel_path
 from src.load_data import load_processed
 from src.train import FEATURE_COLS
 
@@ -162,14 +162,14 @@ def run_eda(df: pd.DataFrame | None = None, out_dir: Path | None = None) -> dict
 
     summary = data_quality_summary(df)
     figures = {
-        "class_balance": str(plot_class_balance(df, out_dir)),
-        "clinical_features": str(plot_clinical_features(df, out_dir)),
-        "correlation_heatmap": str(plot_correlation_heatmap(df, out_dir)),
-        "age_chol_scatter": str(plot_age_chol_scatter(df, out_dir)),
+        "class_balance": rel_path(plot_class_balance(df, out_dir)),
+        "clinical_features": rel_path(plot_clinical_features(df, out_dir)),
+        "correlation_heatmap": rel_path(plot_correlation_heatmap(df, out_dir)),
+        "age_chol_scatter": rel_path(plot_age_chol_scatter(df, out_dir)),
     }
     missing_path = plot_missing_values(df, out_dir)
     if missing_path:
-        figures["missing_values"] = str(missing_path)
+        figures["missing_values"] = rel_path(missing_path)
 
     report = {"summary": summary, "figures": figures}
     report_path = out_dir.parent / "eda_summary.json"
