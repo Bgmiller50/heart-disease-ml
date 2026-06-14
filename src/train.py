@@ -14,7 +14,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score, train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
@@ -89,23 +89,40 @@ def train_and_select(df: pd.DataFrame) -> tuple[Pipeline, str, dict]:
     best_model: Pipeline | None = None
 
     for name, pipeline in make_models().items():
+        cv_scores = cross_val_score(
+            pipeline, X_train, y_train, cv=5, scoring="roc_auc", n_jobs=-1
+        )
         pipeline.fit(X_train, y_train)
         proba = pipeline.predict_proba(X_test)[:, 1]
         auc = float(roc_auc_score(y_test, proba))
-        results[name] = {"roc_auc": auc}
-        print(f"{name}: ROC-AUC = {auc:.3f}")
+        results[name] = {
+            "roc_auc": auc,
+            "cv_roc_auc_mean": float(cv_scores.mean()),
+            "cv_roc_auc_std": float(cv_scores.std()),
+            "cv_scores": [float(s) for s in cv_scores],
+        }
+        print(
+            f"{name}: test ROC-AUC = {auc:.3f} | "
+            f"CV = {cv_scores.mean():.3f} (+/- {cv_scores.std():.3f})"
+        )
         if auc > best_auc:
             best_auc = auc
             best_name = name
             best_model = pipeline
 
     assert best_model is not None
+    best_results = results[best_name]
     meta = {
         "best_model": best_name,
         "best_roc_auc": best_auc,
+        "cv_roc_auc_mean": best_results["cv_roc_auc_mean"],
+        "cv_roc_auc_std": best_results["cv_roc_auc_std"],
+        "model_comparison": results,
         "n_train": int(len(X_train)),
         "n_test": int(len(X_test)),
         "feature_columns": FEATURE_COLS,
+        "random_state": RANDOM_STATE,
+        "test_size": TEST_SIZE,
     }
     return best_model, best_name, meta
 

@@ -1,0 +1,19 @@
+{
+  "metrics": {
+    "threshold": 0.64,
+    "sensitivity": 0.8928571428571429,
+    "specificity": 0.9696969696969697,
+    "ppv": 0.9615384615384616,
+    "npv": 0.9142857142857143,
+    "tp": 25,
+    "fp": 1,
+    "tn": 32,
+    "fn": 3,
+    "roc_auc": 0.9583333333333334
+  },
+  "figures": {
+    "roc": "/Users/barringtonmiller/Data Science Learning/projects/01_heart_disease/reports/figures/roc_curve.png",
+    "confusion_matrix": "/Users/barringtonmiller/Data Science Learning/projects/01_heart_disease/reports/figures/confusion_matrix.png",
+    "calibration": "/Users/barringtonmiller/Data Science Learning/projects/01_heart_disease/reports/figures/calibration_curve.png"
+  }
+}

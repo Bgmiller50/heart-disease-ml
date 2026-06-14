@@ -1,0 +1,244 @@
+{
+  "top_features": [
+    {
+      "feature": "thal",
+      "label": "Thalassemia",
+      "importance": 0.1307848875698424
+    },
+    {
+      "feature": "thalach",
+      "label": "Max heart rate",
+      "importance": 0.12118030139085363
+    },
+    {
+      "feature": "cp",
+      "label": "Chest pain type",
+      "importance": 0.11840803692623603
+    },
+    {
+      "feature": "ca",
+      "label": "Major vessels (fluoroscopy)",
+      "importance": 0.1098805842760088
+    },
+    {
+      "feature": "age",
+      "label": "Age (years)",
+      "importance": 0.09676819969930102
+    },
+    {
+      "feature": "oldpeak",
+      "label": "ST depression (oldpeak)",
+      "importance": 0.09140306019089121
+    },
+    {
+      "feature": "chol",
+      "label": "Serum cholesterol (mg/dL)",
+      "importance": 0.08455354265689802
+    },
+    {
+      "feature": "trestbps",
+      "label": "Resting BP (mmHg)",
+      "importance": 0.07845563940445757
+    }
+  ],
+  "threshold_sensitivity": [
+    {
+      "threshold": 0.1,
+      "sensitivity": 1.0,
+      "specificity": 0.273,
+      "ppv": 0.538,
+      "npv": 1.0,
+      "tp": 28,
+      "fp": 24,
+      "tn": 9,
+      "fn": 0
+    },
+    {
+      "threshold": 0.15,
+      "sensitivity": 1.0,
+      "specificity": 0.364,
+      "ppv": 0.571,
+      "npv": 1.0,
+      "tp": 28,
+      "fp": 21,
+      "tn": 12,
+      "fn": 0
+    },
+    {
+      "threshold": 0.2,
+      "sensitivity": 1.0,
+      "specificity": 0.485,
+      "ppv": 0.622,
+      "npv": 1.0,
+      "tp": 28,
+      "fp": 17,
+      "tn": 16,
+      "fn": 0
+    },
+    {
+      "threshold": 0.25,
+      "sensitivity": 1.0,
+      "specificity": 0.576,
+      "ppv": 0.667,
+      "npv": 1.0,
+      "tp": 28,
+      "fp": 14,
+      "tn": 19,
+      "fn": 0
+    },
+    {
+      "threshold": 0.3,
+      "sensitivity": 1.0,
+      "specificity": 0.636,
+      "ppv": 0.7,
+      "npv": 1.0,
+      "tp": 28,
+      "fp": 12,
+      "tn": 21,
+      "fn": 0
+    },
+    {
+      "threshold": 0.35,
+      "sensitivity": 0.964,
+      "specificity": 0.727,
+      "ppv": 0.75,
+      "npv": 0.96,
+      "tp": 27,
+      "fp": 9,
+      "tn": 24,
+      "fn": 1
+    },
+    {
+      "threshold": 0.4,
+      "sensitivity": 0.964,
+      "specificity": 0.788,
+      "ppv": 0.794,
+      "npv": 0.963,
+      "tp": 27,
+      "fp": 7,
+      "tn": 26,
+      "fn": 1
+    },
+    {
+      "threshold": 0.45,
+      "sensitivity": 0.964,
+      "specificity": 0.818,
+      "ppv": 0.818,
+      "npv": 0.964,
+      "tp": 27,
+      "fp": 6,
+      "tn": 27,
+      "fn": 1
+    },
+    {
+      "threshold": 0.5,
+      "sensitivity": 0.964,
+      "specificity": 0.879,
+      "ppv": 0.871,
+      "npv": 0.967,
+      "tp": 27,
+      "fp": 4,
+      "tn": 29,
+      "fn": 1
+    },
+    {
+      "threshold": 0.55,
+      "sensitivity": 0.929,
+      "specificity": 0.879,
+      "ppv": 0.867,
+      "npv": 0.935,
+      "tp": 26,
+      "fp": 4,
+      "tn": 29,
+      "fn": 2
+    },
+    {
+      "threshold": 0.6,
+      "sensitivity": 0.893,
+      "specificity": 0.909,
+      "ppv": 0.893,
+      "npv": 0.909,
+      "tp": 25,
+      "fp": 3,
+      "tn": 30,
+      "fn": 3
+    },
+    {
+      "threshold": 0.65,
+      "sensitivity": 0.857,
+      "specificity": 0.97,
+      "ppv": 0.96,
+      "npv": 0.889,
+      "tp": 24,
+      "fp": 1,
+      "tn": 32,
+      "fn": 4
+    },
+    {
+      "threshold": 0.7,
+      "sensitivity": 0.75,
+      "specificity": 0.97,
+      "ppv": 0.955,
+      "npv": 0.821,
+      "tp": 21,
+      "fp": 1,
+      "tn": 32,
+      "fn": 7
+    },
+    {
+      "threshold": 0.75,
+      "sensitivity": 0.607,
+      "specificity": 0.97,
+      "ppv": 0.944,
+      "npv": 0.744,
+      "tp": 17,
+      "fp": 1,
+      "tn": 32,
+      "fn": 11
+    },
+    {
+      "threshold": 0.8,
+      "sensitivity": 0.536,
+      "specificity": 0.97,
+      "ppv": 0.938,
+      "npv": 0.711,
+      "tp": 15,
+      "fp": 1,
+      "tn": 32,
+      "fn": 13
+    },
+    {
+      "threshold": 0.85,
+      "sensitivity": 0.357,
+      "specificity": 0.97,
+      "ppv": 0.909,
+      "npv": 0.64,
+      "tp": 10,
+      "fp": 1,
+      "tn": 32,
+      "fn": 18
+    },
+    {
+      "threshold": 0.9,
+      "sensitivity": 0.25,
+      "specificity": 0.97,
+      "ppv": 0.875,
+      "npv": 0.604,
+      "tp": 7,
+      "fp": 1,
+      "tn": 32,
+      "fn": 21
+    }
+  ],
+  "clinical_insights": [
+    "Thalassemia (thal) \u2014 rank 1",
+    "Max heart rate (thalach) \u2014 rank 2",
+    "Chest pain type (cp) \u2014 rank 3",
+    "Major vessels (fluoroscopy) (ca) \u2014 rank 4",
+    "Age (years) (age) \u2014 rank 5"
+  ],
+  "figures": {
+    "feature_importance": "/Users/barringtonmiller/Data Science Learning/projects/01_heart_disease/reports/figures/feature_importance.png",
+    "threshold_sensitivity": "/Users/barringtonmiller/Data Science Learning/projects/01_heart_disease/reports/figures/threshold_sensitivity.png"
+  }
+}

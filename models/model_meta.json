@@ -1,0 +1,51 @@
+{
+  "best_model": "random_forest",
+  "best_roc_auc": 0.9583333333333334,
+  "cv_roc_auc_mean": 0.8875344864475299,
+  "cv_roc_auc_std": 0.042312136898972,
+  "model_comparison": {
+    "logistic_regression": {
+      "roc_auc": 0.9502164502164503,
+      "cv_roc_auc_mean": 0.8889851694199521,
+      "cv_roc_auc_std": 0.04238884640642466,
+      "cv_scores": [
+        0.9381270903010033,
+        0.8232323232323233,
+        0.9143356643356644,
+        0.9125874125874126,
+        0.8566433566433567
+      ]
+    },
+    "random_forest": {
+      "roc_auc": 0.9583333333333334,
+      "cv_roc_auc_mean": 0.8875344864475299,
+      "cv_roc_auc_std": 0.042312136898972,
+      "cv_scores": [
+        0.9431438127090301,
+        0.824074074074074,
+        0.923951048951049,
+        0.8802447552447552,
+        0.8662587412587412
+      ]
+    }
+  },
+  "n_train": 242,
+  "n_test": 61,
+  "feature_columns": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "random_state": 42,
+  "test_size": 0.2
+}

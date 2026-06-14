@@ -1,7 +1,6 @@
 data/raw/*.data
 data/processed/*.parquet
 models/*.joblib
-models/*.json
 .venv/
 .venu/
 __pycache__/
